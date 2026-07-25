@@ -24,9 +24,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    {/* Wrap app with Clerk auth provider for authentication */}
+    // Wrap app with Clerk auth provider for authentication
     <ClerkProvider>
-      {/* Apply custom fonts and styling via CSS variables */}
+      {/* apply custom fonts and styling via css */}
       <html
         lang="en"
         className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
