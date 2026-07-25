@@ -20,7 +20,9 @@ const Navbar = () => {
         <p className="text-[26px] font-extrabold text-white max-sm:hidden"></p>
       </Link>
       <div className="flex items-center gap-3">
+        {/* Conditionally render auth buttons based on user sign-in status */}
         <Show when="signed-out">
+          {/* Modal-based sign-in to avoid page redirect */}
           <SignInButton mode="modal">
             <button className="rounded-md border border-white/20 px-3 py-2 text-sm font-medium text-white transition hover:bg-white/10">
               Sign in
